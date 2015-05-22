@@ -26,6 +26,9 @@ public class OneTimePad {
 			}
 		}
 		
+		bMessage.hexToBytes();
+		bPad.hexToBytes();
+		
 		//Decode the message
 		ByteBuffer decoded = new ByteBuffer();
 		for (int i = 0; i < bMessage.length(); i+=1) {
